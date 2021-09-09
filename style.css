@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700;800&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    color: #fff;
+}
+p {
+    margin: 0 0 10px 0;
+}
+.sidebar nav a.navbar-brand {
+    font-size: 23px;
+    font-weight: 800;
+    color: #fff;
+}
+.brand2 {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px 10px 0 10px;
+} 
+.menu {
+    font-size: 14px;
+    font-weight: 300;
+    padding: 10px;
+}
+.nav-link {
+    width: 100%;
+    border-radius: 5px;
+}
+.nav-link:hover {
+    background-color: #ffffff;
+    color: #343a40;
+}
+.nav-link i {
+    padding: 0 15px 0 0;
+}
+.nav-link i.booking {
+    padding: 0 16px 0 2px;
+}
+a.nav-link.dropdown-toggle::after {
+    margin: 0 0 0 70px;
+}
+.user-icon {
+    padding: 0 16px 0 2px;
+}
+a.nav-link.dropdown-toggle.user::after {
+    margin: 0 0 0 20px;
+}
+.card1 {
+    padding: 10px 15px;
+}
+.top-card {
+    border-radius: 7px;
+    color: #fff;
+    border: none;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+}
+.top-card.left {
+    background-color: #f0bb34;
+}
+.top-card.center {
+    background-color: #ce0000;
+}
+.top-card.right {
+    background-color: #9BCB3C;
+}
+.top-icon {
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: #fff;
+    padding: 7px;
+    border-radius: 3px;
+    background-color: #343a40;
+    margin: 0 10px 0 0;
+}
+.top-title {
+    font-size: 12px;
+}
+h5.angka {
+    font-size: 25px;
+    font-weight: 800;
+}
+.popular-price {
+    font-size: 18px;
+    font-weight: 700;
+}
+span.bold {
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 0 5px;
+}
+.target {
+    padding: 25px 0;
+}
+.target-box {
+    margin: 0 0 25px 0;
+}
+.target-title {
+    font-size: 16px;
+    font-weight: 500;
+    margin: 15px 0 15px 0;
+}
+.percent {
+    font-size: 60px;
+    font-weight: 800;
+    margin: 10px 0 15px 0;
+}
+.success {
+    color: rgb(74, 148, 1);
+}
+.cenceled {
+    color: red;
+}
+.short-description {
+    font-size: 11px;
+}
+#form_edit {
+    display: none;
+}
+.booking-detail {
+    padding: 15px 0;
+}
+.detail {
+    padding: 15px;
+    border-radius: 10px;
+    margin: 0 0 15px 0;
+    border: 1px grey solid;
+    background-color: #fff;
+}
+.detail-title {
+    font-size: 10px;
+}
+.detail-subtitle {
+    font-size: 13px;
+}
+.booking-main-title {
+    padding: 40px 0 20px 0;
+}

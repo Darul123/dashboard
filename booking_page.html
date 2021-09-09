@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/020f45a6ec.js" crossorigin="anonymous"></script>
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-2 bg-dark text-white" style="min-height: 100vh;">
+          <div class="sidebar position-fixed">
+            <nav>
+              <a class="navbar-brand pt-5 pl-3" href="#">
+                Logo.
+              </a>
+              <p class="brand2 pt-5 pl-3">Dashboard</p>
+              <hr class="border-white">
+              <ul class="nav flex-column">
+                <li class="nav-item text-white">
+                  <a class="nav-link active menu" href="index.html"><i class="fas fa-home"></i>Home</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="nav-link dropdown-toggle menu"><i class="fas fa-list-ul"></i>List Menu</a>
+                  <ul class="collapse list-unstyled" id="homeSubmenu">
+                      <li>
+                          <a class="nav-link pl-4" href="list_menu.html"><i class="fas fa-book-open"></i>Regular Menu</a>
+                      </li>
+                      <li>
+                          <a class="nav-link pl-4" href="add_menu.html"><i class="fas fa-plus-circle"></i>Add Menu</a>
+                      </li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link menu" href="booking_page.html"><i class="fas fa-user booking"></i>Booking</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <div class="col-7 bg-light">
+            <div class="container">
+                <header>
+                    <div class="row pt-3">
+                        <div class="col-12">
+                          <nav class="navbar navbar-expand navbar-light px-0 ">
+                            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                              <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                              </form>
+                              <ul class="navbar-nav ml-auto">
+                                <li class="nav-item dropdown">
+                                  <a class="nav-link dropdown-toggle user" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fas fa-user user-icon"></i>Username
+                                  </a>
+                                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Profile</a>
+                                    <a class="dropdown-item" href="#">Setting</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Logout</a>
+                                  </div>
+                                </li>
+                            </div>
+                          </nav>
+                        </div>
+                    </div>
+                </header>
+                <section>
+                    <h5 class="pb-3 pt-4">Booking List</h5>
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th scope="col">No</th>
+                                <th scope="col">Booking Name</th>
+                                <th scope="col">Date & Time </th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Detail</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>John</td>
+                                <td>04 Aug 2021, 03.00 pm</td>
+                                <td class="text-warning">Waiting</td>
+                                <td>
+                                  <button type="button" class="btn btn-dark btn-sm">See Detail</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Liam</td>
+                                <td>04 Aug 2021, 10.00 am</td>
+                                <td class="text-warning">Waiting</td>
+                                <td>
+                                  <button type="button" class="btn btn-dark btn-sm">See Detail</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Noah</td>
+                                <td>04 Aug 2021, 08.40 am</td>
+                                <td class="success">Completed</td>
+                                <td>
+                                  <button type="button" class="btn btn-dark btn-sm">See Detail</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+        <div class="col-3 bg-dark">
+            <section class="booking-detail">
+                <h5 class="text-white booking-main-title">Booking Detail</h5>
+                <div class="detail bg-light">
+                    <p class="detail-title">Name</p>
+                    <p class="detail-subtitle">John Doe</p>
+                </div>
+                <div class="detail bg-light">
+                    <p class="detail-title">Email</p>
+                    <p class="detail-subtitle">example@mail.com</p>
+                </div>
+                <div class="detail bg-light">
+                    <p class="detail-title">Phone</p>
+                    <p class="detail-subtitle">7576 7462 7462</p>
+                </div>
+                <div class="detail bg-light">
+                    <p class="detail-title">People</p>
+                    <p class="detail-subtitle">4 Person</p>
+                </div>
+                <div class="detail bg-light">
+                    <p class="detail-title">Date & Time</p>
+                    <p class="mb-0 detail-subtitle">21 August 2021</p>
+                    <p class="detail-subtitle">08.00 pm</p>
+                </div>
+                <div class="detail bg-light">
+                    <p class="detail-title">Notes</p>
+                    <p class="detail-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                </div>
+            </section>
+             
+        </div>
+      </div>
+    </div>
+
+    <script src="./function.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+  </body>
+</html>

@@ -11,7 +11,7 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-2 bg-dark text-white" style="min-height: 100vh;">
+        <div class="col-2 text-white" style="min-height: 100vh; background-color: #1e1d2d;">
           <div class="sidebar position-fixed">
             <nav>
               <a class="navbar-brand pt-5 pl-3" href="#">
@@ -41,7 +41,7 @@
             </nav>
           </div>
         </div>
-        <div class="col-10 bg-light">
+        <div class="col-10 text-white" style="background-color: #1a1927;">
             <div class="container">
                 <header>
                     <div class="row pt-3">
@@ -50,11 +50,11 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                               </form>
                               <ul class="navbar-nav ml-auto">
                                 <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle user" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <a class="nav-link dropdown-toggle user text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-user user-icon"></i>Username
                                   </a>
                                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -121,8 +121,8 @@
                                     </label>
                                 </div>
                             </div>
-                            <button type="submit" class="btn btn-primary booking-button mt-1" onclick="remove()">Save</button>
-                            <button type="button" class="btn btn-danger" onclick="remove()">Cancel</button>
+                            <button type="submit" class="btn btn-primary booking-button mr-3 px-4" onclick="remove()">Save</button>
+                            <button type="button" class="btn btn-danger px-4" onclick="remove()">Cancel</button>
                           </form>
                     </div>
                 </section>

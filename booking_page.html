@@ -11,7 +11,7 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-2 bg-dark text-white" style="min-height: 100vh;">
+        <div class="col-2 text-white" style="min-height: 100vh; background-color: #1e1d2d;">
           <div class="sidebar position-fixed">
             <nav>
               <a class="navbar-brand pt-5 pl-3" href="#">
@@ -41,7 +41,7 @@
             </nav>
           </div>
         </div>
-        <div class="col-7 bg-light">
+        <div class="col-7 text-white" style="background-color: #1a1927;">
             <div class="container">
                 <header>
                     <div class="row pt-3">
@@ -50,11 +50,11 @@
                             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                               <form class="form-inline my-2 my-lg-0">
                                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                                <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                               </form>
                               <ul class="navbar-nav ml-auto">
                                 <li class="nav-item dropdown">
-                                  <a class="nav-link dropdown-toggle user" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  <a class="nav-link dropdown-toggle user text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <i class="fas fa-user user-icon"></i>Username
                                   </a>
                                   <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -69,81 +69,256 @@
                         </div>
                     </div>
                 </header>
-                <section>
-                    <h5 class="pb-3 pt-4">Booking List</h5>
-                    <table class="table table-striped">
-                        <thead>
-                            <tr>
-                                <th scope="col">No</th>
-                                <th scope="col">Booking Name</th>
-                                <th scope="col">Date & Time </th>
-                                <th scope="col">Status</th>
-                                <th scope="col">Detail</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <th scope="row">1</th>
-                                <td>John</td>
-                                <td>04 Aug 2021, 03.00 pm</td>
-                                <td class="text-warning">Waiting</td>
-                                <td>
-                                  <button type="button" class="btn btn-dark btn-sm">See Detail</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">2</th>
-                                <td>Liam</td>
-                                <td>04 Aug 2021, 10.00 am</td>
-                                <td class="text-warning">Waiting</td>
-                                <td>
-                                  <button type="button" class="btn btn-dark btn-sm">See Detail</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <th scope="row">3</th>
-                                <td>Noah</td>
-                                <td>04 Aug 2021, 08.40 am</td>
-                                <td class="success">Completed</td>
-                                <td>
-                                  <button type="button" class="btn btn-dark btn-sm">See Detail</button>
-                                </td>
-                            </tr>
-                        </tbody>
-                    </table>
+                <div class="d-flex justify-content-between align-items-center my-4">
+                  <h5 class="py-3">Booking List</h5>
+                  <div class="view-button">
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="list()">List</button>
+                    <button type="button" class="btn btn-secondary btn-sm" onclick="card()">Card</button>
+                  </div>
+                </div>
+                <section id="booking_list">
+                  <div class="container">
+                    <div class="row d-flex align-items-center">
+                      <div class="col-1 ">
+                        <p class="font-weight-bold my-0">No</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="font-weight-bold my-0">Booking Name</p>
+                      </div>
+                      <div class="col-3">
+                        <p class="font-weight-bold my-0">Date & Time</p>
+                      </div>
+                      <div class="col-2">
+                        <p class="font-weight-bold my-0">Status</p>
+                      </div>
+                    </div>
+                    <div class="row mt-3 py-3 d-flex align-items-center" style="background-color: #1e1d2d;">
+                      <div class="col-1">
+                        <p class="my-0">1</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="my-0">John Doe</p>
+                      </div>
+                      <div class="col-3">
+                        <p class="my-0">04 Aug 2021, 03.00 pm</p>
+                      </div>
+                      <div class="col-2">
+                        <p class="waiting my-0">Waiting</p>
+                      </div>
+                      <div class="col-2">
+                        <a href="#">See Detail</a>
+                      </div>
+                    </div>
+                    <div class="row mt-3 py-3 d-flex align-items-center" style="background-color: #1e1d2d;">
+                      <div class="col-1">
+                        <p class="my-0">2</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="my-0">John Doe</p>
+                      </div>
+                      <div class="col-3">
+                        <p class="my-0">04 Aug 2021, 03.00 pm</p>
+                      </div>
+                      <div class="col-2">
+                        <p class="my-0 success">Done</p>
+                      </div>
+                      <div class="col-2">
+                        <a href="#">See Detail</a>
+                      </div>
+                    </div>
+                    <div class="row mt-3 py-3 d-flex align-items-center" style="background-color: #1e1d2d;">
+                      <div class="col-1">
+                        <p class="my-0">3</p>
+                      </div>
+                      <div class="col-4">
+                        <p class="my-0">John Doe</p>
+                      </div>
+                      <div class="col-3">
+                        <p class="my-0">04 Aug 2021, 03.00 pm</p>
+                      </div>
+                      <div class="col-2">
+                        <p class="my-0 cenceled">Cencel</p>
+                      </div>
+                      <div class="col-2">
+                        <a href="#">See Detail</a>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section id="booking_card">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-6 px-0 mx-0 d-flex justify-content-start">
+                        <div class="card card-chart booking-box" style="width: 350px;">
+                          <div class="d-flex">
+                            <img src="./assets/costumer1.png" alt="" class="top-booking-icon mr-4">
+                            <div class="booking-top-content">
+                              <p class="card-title">Booking Name</p>
+                              <h2>John Doe</h2>
+                              <p class="booking-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                              <div class="d-flex">
+                                <p>$ 1,100</p>
+                                <p class="waiting ml-3 px-3">Waiting</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="booking-bottom-content">
+                            <div class="booking-wrapper row">
+                              <div class="booking-email col-6 mx-0">
+                                <p class="detail-title">Email</p>
+                                <p>example@mail.com</p>
+                              </div>
+                              <div class="booking-number col-6 mx-0 px-0">
+                                <p class="detail-title">Phone</p>
+                                <p>7576 7462 7462</p>
+                              </div>
+                            </div>
+                            <div class="booking-wrapper row pt-2">
+                              <div class="booking-email col-6 mx-0">
+                                <p class="detail-title">Person</p>
+                                <div class="d-flex">
+                                  <p class="person-list">2</p>
+                                  <p class="person-list choose">4</p>
+                                  <p class="person-list">6</p>
+                                </div>
+                              </div>
+                              <div class="booking-number col-6 mx-0 px-0">
+                                <p class="detail-title">Date & Time</p>
+                                <p>21 August 2021 <br>08.00 pm</p>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-secondary btn-lg btn-block mt-4">See Detail</button>
+                        </div>
+                      </div>
+                      <div class="col-6 px-0 mx-0 d-flex justify-content-end">
+                        <div class="card card-chart booking-box" style="width: 350px;">
+                          <div class="d-flex">
+                            <img src="./assets/costumer1.png" alt="" class="top-booking-icon mr-4">
+                            <div class="booking-top-content">
+                              <p class="card-title">Booking Name</p>
+                              <h2>John Doe</h2>
+                              <p class="booking-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                              <div class="d-flex">
+                                <p>$ 1,100</p>
+                                <p class="success ml-3 px-3">Done</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="booking-bottom-content">
+                            <div class="booking-wrapper row">
+                              <div class="booking-email col-6 mx-0">
+                                <p class="detail-title">Email</p>
+                                <p>example@mail.com</p>
+                              </div>
+                              <div class="booking-number col-6 mx-0 px-0">
+                                <p class="detail-title">Phone</p>
+                                <p>7576 7462 7462</p>
+                              </div>
+                            </div>
+                            <div class="booking-wrapper row pt-2">
+                              <div class="booking-email col-6 mx-0">
+                                <p class="detail-title">Person</p>
+                                <div class="d-flex">
+                                  <p class="person-list">2</p>
+                                  <p class="person-list">4</p>
+                                  <p class="person-list choose">6</p>
+                                </div>
+                              </div>
+                              <div class="booking-number col-6 mx-0 px-0">
+                                <p class="detail-title">Date & Time</p>
+                                <p>21 August 2021 <br>08.00 pm</p>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-secondary btn-lg btn-block mt-4">See Detail</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-6 px-0 mx-0 d-flex justify-content-start">
+                        <div class="card card-chart booking-box" style="width: 350px;">
+                          <div class="d-flex">
+                            <img src="./assets/costumer1.png" alt="" class="top-booking-icon mr-4">
+                            <div class="booking-top-content">
+                              <p class="card-title">Booking Name</p>
+                              <h2>John Doe</h2>
+                              <p class="booking-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+                              <div class="d-flex">
+                                <p>$ 1,100</p>
+                                <p class="cenceled ml-3 px-3">Cencel</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="booking-bottom-content">
+                            <div class="booking-wrapper row">
+                              <div class="booking-email col-6 mx-0">
+                                <p class="detail-title">Email</p>
+                                <p>example@mail.com</p>
+                              </div>
+                              <div class="booking-number col-6 mx-0 px-0">
+                                <p class="detail-title">Phone</p>
+                                <p>7576 7462 7462</p>
+                              </div>
+                            </div>
+                            <div class="booking-wrapper row pt-2">
+                              <div class="booking-email col-6 mx-0">
+                                <p class="detail-title">Person</p>
+                                <div class="d-flex">
+                                  <p class="person-list choose">2</p>
+                                  <p class="person-list">4</p>
+                                  <p class="person-list">6</p>
+                                </div>
+                              </div>
+                              <div class="booking-number col-6 mx-0 px-0">
+                                <p class="detail-title">Date & Time</p>
+                                <p>21 August 2021 <br>08.00 pm</p>
+                              </div>
+                            </div>
+                          </div>
+                          <button type="button" class="btn btn-secondary btn-lg btn-block mt-4">See Detail</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </section>
             </div>
         </div>
-        <div class="col-3 bg-dark">
+        <div class="col-3" style="background-color: #1e1d2d;">
             <section class="booking-detail">
                 <h5 class="text-white booking-main-title">Booking Detail</h5>
-                <div class="detail bg-light">
+                <hr class="border-title">
+                <div class="detail">
                     <p class="detail-title">Name</p>
                     <p class="detail-subtitle">John Doe</p>
                 </div>
-                <div class="detail bg-light">
+                <div class="detail">
                     <p class="detail-title">Email</p>
                     <p class="detail-subtitle">example@mail.com</p>
                 </div>
-                <div class="detail bg-light">
+                <div class="detail">
                     <p class="detail-title">Phone</p>
                     <p class="detail-subtitle">7576 7462 7462</p>
                 </div>
-                <div class="detail bg-light">
-                    <p class="detail-title">People</p>
+                <div class="detail">
+                    <p class="detail-title">Person</p>
                     <p class="detail-subtitle">4 Person</p>
                 </div>
-                <div class="detail bg-light">
+                <div class="detail">
                     <p class="detail-title">Date & Time</p>
                     <p class="mb-0 detail-subtitle">21 August 2021</p>
                     <p class="detail-subtitle">08.00 pm</p>
                 </div>
-                <div class="detail bg-light">
+                <div class="detail">
                     <p class="detail-title">Notes</p>
                     <p class="detail-subtitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 </div>
+                <div class="detail">
+                  <p class="detail-title">Bill</p>
+                  <p class="detail-subtitle">$ 1,100</p>
+                </div>
+                <button type="button" class="btn btn-secondary btn-lg btn-block mt-4 btn-detail">Close Detail</button>
             </section>
-             
         </div>
       </div>
     </div>

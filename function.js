@@ -1,6 +1,8 @@
-function edit() {
-    document.getElementById("form_edit").style.display = "block";
+function list() {
+    document.getElementById("booking_list").style.display = "block";
+    document.getElementById("booking_card").style.display = "none";
 }
-function remove() {
-    document.getElementById("form_edit").style.display = "none";
+function card() {
+    document.getElementById("booking_card").style.display = "block";
+    document.getElementById("booking_list").style.display = "none";
 }

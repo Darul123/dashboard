@@ -12,6 +12,14 @@ a {
 p {
     margin: 0 0 10px 0;
 }
+.card {
+    border-radius: 10px; 
+    overflow: hidden;
+    border: 1px solid transparent;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    background-color: #1f1e30;
+    color: #fff;
+}
 .sidebar nav a.navbar-brand {
     font-size: 23px;
     font-weight: 800;
@@ -34,6 +42,9 @@ p {
 .nav-link:hover {
     background-color: #ffffff;
     color: #343a40;
+}
+.nav-link.dropdown-toggle.user:hover {
+    background-color: #1f1e30;
 }
 .nav-link i {
     padding: 0 15px 0 0;
@@ -60,13 +71,13 @@ a.nav-link.dropdown-toggle.user::after {
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 .top-card.left {
-    background-color: #f0bb34;
+    background-image: linear-gradient(#ffc83c, #d89f0f);
 }
 .top-card.center {
-    background-color: #ce0000;
+    background-image: linear-gradient(#ff0000, #b90101);
 }
 .top-card.right {
-    background-color: #9BCB3C;
+    background-image: linear-gradient(#7cec20, #75a318);
 }
 .top-icon {
     width: 30px;
@@ -74,8 +85,8 @@ a.nav-link.dropdown-toggle.user::after {
     font-size: 14px;
     color: #fff;
     padding: 7px;
-    border-radius: 3px;
-    background-color: #343a40;
+    border-radius: 6px;
+    background-color: rgba(44, 44, 44, 0.4);
     margin: 0 10px 0 0;
 }
 .top-title {
@@ -99,22 +110,78 @@ span.bold {
 }
 .target-box {
     margin: 0 0 25px 0;
+    background-image: linear-gradient(#0575E6, #021B79);
+    color: #fff;
+    border: none;
+    padding: 30px 25px;
+}
+.target-box1 {
+    background-image: linear-gradient(#52e22a, #0b7a0b);
+    color: #fff;
+    border: none;
+    padding: 30px 25px;
+}
+.top-target-icon {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 5px 0 20px 0;
+}
+span i.target-icon {
+    font-size: 12px;
+    padding: 0 0 0 10px;
+    text-align: center;
+}
+span i.target-icon.up {
+    color: rgb(134, 226, 41);
+}
+span i.target-icon.down {
+    color: rgb(185, 3, 3);
+}
+.target-box p, .target-box1 p {
+    margin: 0;
+    font-weight: 200;
+    font-size: 12px;
 }
 .target-title {
-    font-size: 16px;
+    font-size: 12px;
     font-weight: 500;
-    margin: 15px 0 15px 0;
+    margin: 5px 0;
 }
 .percent {
-    font-size: 60px;
-    font-weight: 800;
+    font-size: 25px;
+    font-weight: 500;
     margin: 10px 0 15px 0;
 }
+.card-chart {
+    box-shadow: none;
+}
 .success {
-    color: rgb(74, 148, 1);
+    background-color: rgb(74, 148, 1);
+    text-align: center;
+    font-size: 9px;
+    padding: 3px 3px;
+    border-radius: 10px;
+    max-width: 50px;
 }
 .cenceled {
-    color: red;
+    background-color: rgb(218, 0, 0);
+    text-align: center;
+    font-size: 9px;
+    padding: 3px 3px;
+    border-radius: 10px;
+    max-width: 80px;
+}
+.waiting {
+    background-color: rgb(187, 159, 0);
+    text-align: center;
+    font-size: 9px;
+    padding: 3px 3px;
+    border-radius: 10px;
+    max-width: 80px;
 }
 .short-description {
     font-size: 11px;
@@ -125,12 +192,19 @@ span.bold {
 .booking-detail {
     padding: 15px 0;
 }
+.border-title {
+    width: 30px;
+    border: 2px solid #ffffff;
+    border-radius: 3px;
+    margin: 10px 0 30px 0;
+
+}
 .detail {
     padding: 15px;
     border-radius: 10px;
     margin: 0 0 15px 0;
-    border: 1px grey solid;
-    background-color: #fff;
+    background-color: #1a1927;
+    color: #fff;
 }
 .detail-title {
     font-size: 10px;
@@ -139,5 +213,60 @@ span.bold {
     font-size: 13px;
 }
 .booking-main-title {
-    padding: 40px 0 20px 0;
+    padding: 40px 0 10px 0;
+}
+.btn-detail {
+    border-radius: 8px;
+    background-image: linear-gradient(#ff0000, #b90101) !important;
+}
+.booking-box {
+    margin: 0 0 25px 0;
+    color: #fff;
+    border: none;
+    padding: 30px 25px;
+}
+.top-booking-icon {
+    width: 120px;
+    height: 120px;
+    color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    margin: 5px 0 20px 0;
+}
+.booking-top-content {
+    margin: 5px 0 0 0;
+}
+.booking-top-content h3 {
+    font-size: 12px;
+}
+.booking-top-content p.booking-description {
+    font-size: 9px;
+}
+.booking-email {
+    margin: 0 20px 0 0;
+}
+p.person-list {
+    font-size: 10px;
+    padding: 3px 15px;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    margin: -2px 5px 0 0;
+    opacity: 0.3;
+}
+p.person-list.choose {
+    opacity: 1.0;
+}
+#booking_list {
+    display: none;
+}
+.view-button button{
+    padding: 3px 13px;
+    margin: 0 0 0 3px;
+    border-radius: 15px;
+}
+.btn-block {
+    background-image: linear-gradient(#52e22a, #0b7a0b);
+    color: #fff;
+    border: none;
 }

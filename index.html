@@ -11,7 +11,7 @@
   <body>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-2 bg-dark text-white" style="height: auto;">
+        <div class="col-2 text-white" style="height: auto; background-color: #1e1d2d;">
           <div class="sidebar position-fixed">
             <nav>
               <a class="navbar-brand pt-5 pl-3" href="#">
@@ -41,7 +41,7 @@
             </nav>
           </div>
         </div>
-        <div class="col-10 bg-light">
+        <div class="col-10 text-white" style="background-color: #1a1927;">
           <div class="container">
             <div class="row pt-3">
               <div class="col-12">
@@ -49,11 +49,11 @@
                   <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <form class="form-inline my-2 my-lg-0">
                       <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Search</button>
+                      <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
                     </form>
                     <ul class="navbar-nav ml-auto">
                       <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle user" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <a class="nav-link dropdown-toggle user text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                           <i class="fas fa-user user-icon"></i>Username
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -86,7 +86,7 @@
                       <img src="./assets/up.png" alt="" class="top-icon">
                       <h5 class="card-title top-title m-0 py-2">Today Revenue</h5>
                     </div>
-                    <h5 class="m-0 angka">$1054</h5>
+                    <h5 class="m-0 angka">$1,054</h5>
                   </div>
                 </div>
               </div>
@@ -106,7 +106,7 @@
               <h5 class="py-3">Popular Menu</h5>
               <div class="row justify-content-center">
                 <div class="col-3 d-flex justify-content-center px-0 box">
-                  <div class="card" style="width: 250px;">
+                  <div class="card" style="width: 250px; border-radius: 15px; overflow: hidden;">
                     <img src="./assets/Card1.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center">
@@ -122,7 +122,7 @@
                   </div>
                 </div>
                 <div class="col-3 d-flex justify-content-center px-0 box">
-                  <div class="card" style="width: 250px;">
+                  <div class="card" style="width: 250px; border-radius: 15px; overflow: hidden;">
                     <img src="./assets/Card2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center">
@@ -137,7 +137,7 @@
                   </div>
                 </div>
                 <div class="col-3 d-flex justify-content-center px-0 box">
-                  <div class="card" style="width: 250px;">
+                  <div class="card" style="width: 250px; border-radius: 15px; overflow: hidden;">
                     <img src="./assets/Card3.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center">
@@ -152,7 +152,7 @@
                   </div>
                 </div>
                 <div class="col-3 d-flex justify-content-center px-0 box">
-                  <div class="card" style="width: 250px;">
+                  <div class="card" style="width: 250px; border-radius: 15px; overflow: hidden;">
                     <img src="./assets/Card2.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
                       <div class="d-flex justify-content-between align-items-center">
@@ -173,17 +173,20 @@
                 <div class="col-3 d-flex justify-content-center px-0 box">
                   <div class="row">
                     <div class="col-12">
-                      <div class="card d-flex flex-column justify-content-center align-items-center ml-3 target-box p-2" style="width: 250px;">
-                        <p class="target-title card-title">Target Costumer</p>
-                        <h2 class="percent">80%</h2>
+                      <div class="card card-chart d-flex flex-column justify-content-center align-items-start ml-3 target-box" style="width: 250px;">
+                        <img src="./assets/costumer.png" alt="" class="top-target-icon">
+                        <h3 class="target-title card-title">Target Costumer</h3>
+                        <h2 class="percent">80% <span><i class="fas fa-arrow-up target-icon up"></i></span></h2>
                         <p>Costumer Visit Today</p>
                         <p>15 Costumer</p>
                       </div>
                     </div>
                     <div class="col-12">
-                      <div class="card d-flex flex-column justify-content-center align-items-center ml-3 p-2" style="width: 250px;">
-                        <p class="target-title card-title">Target Order</p>
-                        <h2 class="percent">65%</h2>
+                      <div class="card card-chart d-flex flex-column justify-content-center align-items-start ml-3 target-box1" style="width: 250px;">
+                        <img src="./assets/order.png" alt="" class="top-target-icon">
+                        <h3 class="target-title card-title">Target Order</h3>
+                        <div class="d-flex align-items-center"></div>
+                        <h2 class="percent">65% <span><i class="fas fa-arrow-down target-icon down"></i></span></h2>
                         <p>Customer Order Today</p>
                         <p>21 Order</p>
                       </div>
@@ -191,11 +194,10 @@
                   </div>
                 </div>
                 <div class="col-9 d-flex justify-content-center px-0 box">
-                  <div class="card" style="width: 800px;">
+                  <div class="card card-chart" style="width: 800px;">
                     <div class="card-body">
-                      <h5 class="card-title m-0">Chart</h5>
-                      <hr>
-                      <canvas id="myChart"></canvas>
+                      <h3 class="pt-3 pb-5 text-center">Order Chart</h3>
+                      <canvas id="myChart" class="chart"></canvas>
                     </div>
                   </div>
                 </div>
@@ -203,60 +205,90 @@
             </section>
             <section>
               <h5 class="py-3">Recent Order List</h5>
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">No</th>
-                    <th scope="col">Costumer Name</th>
-                    <th scope="col">Delivery Date & Time </th>
-                    <th scope="col">Location</th>
-                    <th scope="col">Amount</th>
-                    <th scope="col">Status</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <th scope="row">1</th>
-                    <td>John</td>
-                    <td>04 Aug 2021, 03.00 pm</td>
-                    <td>Jakarta</td>
-                    <td>$ 190</td>
-                    <td class="success">Success</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">2</th>
-                    <td>Liam</td>
-                    <td>04 Aug 2021, 10.00 am</td>
-                    <td>Jakarta</td>
-                    <td>$ 80</td>
-                    <td class="success">Success</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">3</th>
-                    <td>Noah</td>
-                    <td>04 Aug 2021, 08.40 am</td>
-                    <td>Jakarta</td>
-                    <td>$ 160</td>
-                    <td class="success">Success</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">4</th>
-                    <td>Oliver</td>
-                    <td>03 Aug 2021, 08.30 pm</td>
-                    <td>Jakarta</td>
-                    <td>$ 135</td>
-                    <td class="cenceled">Cenceled</td>
-                  </tr>
-                  <tr>
-                    <th scope="row">5</th>
-                    <td>Elijah</td>
-                    <td>03 Aug 2021, 08.00 pm</td>
-                    <td>Jakarta</td>
-                    <td>$ 90</td>
-                    <td class="success">Success</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="container">
+                <div class="row d-flex align-items-center">
+                  <div class="col-1 ">
+                    <p class="font-weight-bold my-0">No</p>
+                  </div>
+                  <div class="col-4 ">
+                    <p class="font-weight-bold my-0">Costumer Name</p>
+                  </div>
+                  <div class="col-3 ">
+                    <p class="font-weight-bold my-0">Delivery Date & Time</p>
+                  </div>
+                  <div class="col-2 ">
+                    <p class="font-weight-bold my-0">Location</p>
+                  </div>
+                  <div class="col-1 ">
+                    <p class="font-weight-bold my-0">Amount</p>
+                  </div>
+                  <div class="col-1 ">
+                    <p class="font-weight-bold my-0">Status</p>
+                  </div>
+                </div>
+                <div class="row mt-3 py-3 d-flex align-items-center" style="background-color: #1e1d2d;">
+                  <div class="col-1">
+                    <p class="my-0">1</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="my-0">John Doe</p>
+                  </div>
+                  <div class="col-3">
+                    <p class="my-0">04 Aug 2021, 03.00 pm</p>
+                  </div>
+                  <div class="col-2">
+                    <p class="my-0">Jakarta</p>
+                  </div>
+                  <div class="col-1">
+                    <p class="my-0">$ 180</p>
+                  </div>
+                  <div class="col-1">
+                    <p class="my-0 success">Done</p>
+                  </div>
+                </div>
+                <div class="row mt-3 py-3 d-flex align-items-center" style="background-color: #1e1d2d;">
+                  <div class="col-1">
+                    <p class="my-0">2</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="my-0">John Doe</p>
+                  </div>
+                  <div class="col-3">
+                    <p class="my-0">04 Aug 2021, 03.00 pm</p>
+                  </div>
+                  <div class="col-2">
+                    <p class="my-0">Jakarta</p>
+                  </div>
+                  <div class="col-1">
+                    <p class="my-0">$ 180</p>
+                  </div>
+                  <div class="col-1">
+                    <p class="my-0 success">Done</p>
+                  </div>
+                </div>
+                <div class="row mt-3 py-3 d-flex align-items-center" style="background-color: #1e1d2d;">
+                  <div class="col-1">
+                    <p class="my-0">3</p>
+                  </div>
+                  <div class="col-4">
+                    <p class="my-0">John Doe</p>
+                  </div>
+                  <div class="col-3">
+                    <p class="my-0">04 Aug 2021, 03.00 pm</p>
+                  </div>
+                  <div class="col-2">
+                    <p class="my-0">Jakarta</p>
+                  </div>
+                  <div class="col-1">
+                    <p class="my-0">$ 180</p>
+                  </div>
+                  <div class="col-1">
+                    <p class="my-0 cenceled">Cencel</p>
+                  </div>
+                </div>
+              </div>
+              
+              
             </section>
           </div>
         </div>
@@ -274,25 +306,37 @@
       var myChart = new Chart(ctx, {
           type: 'line',
           data: {
-              labels: ['March', 'April', 'may', 'June', 'July' , 'August'],
+              labels: ['Aug 01', 'Aug 02', 'Aug 03', 'Aug 04', 'Aug 05'],
               datasets: [{
                   label: '# Total Order 2021',
-                  data: [201, 202, 218, 210, 206, 219],
+                  data: [54, 52, 55, 51, 53],
                   backgroundColor: [
-                      'rgba(20, 137, 233, 0.2)',
+                      'rgba(180, 180, 180, 0.1)',
                   ],
                   borderColor: [
                       'rgb(20, 137, 233)',
                   ],
-                  borderWidth: 1,
+                  borderWidth: 4,
                   fill: true,
                   tension: 0.3
-              }]
+              }],
           },
           options: {
               scales: {
+                  x: {
+                    grid : {
+                      display: false
+                    }
+                  },
                   y: {
-                      beginAtZero: false
+                      display: false,
+                      beginAtZero: true,
+                      position: 'left',
+                      min: 50,
+                      max: 56,
+                      grid: {
+                        display: false
+                      }
                   }
               }
           }
